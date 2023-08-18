@@ -11,7 +11,7 @@ try{
         // Get the JSON data from the request body
         $json_data = file_get_contents('php://input');
 
-        // Convert JSON to PHP array
+        // Convert JSON to PHP arrays
         $data = json_decode($json_data, true);
         $subject = $data["subject"];
         $body = $data["body"];
